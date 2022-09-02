@@ -14,7 +14,7 @@ const ItemList = () => {
     }, [])
   return (
     <>
-        <h1> Item List Container</h1>
+       
 
     {
         loading ? <h2>Cargando...</h2> 
@@ -23,7 +23,7 @@ const ItemList = () => {
         
         <div  className="grid-product" >
             {data.map(data => (
-                    <Item key={data.name} data={data}/>
+                    <Item key={data.articulo} data={data}/>
             ))}
         </div>
 
